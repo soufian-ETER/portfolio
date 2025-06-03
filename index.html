@@ -9,6 +9,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            padding-bottom: 60px; /* Add padding to prevent footer overlap */
         }
         /* New Color Scheme */
         .bg-digital-dark { background-color: #111827; } /* bg-gray-900 */
@@ -63,7 +64,8 @@
         }
     </style>
 </head>
-<body class="bg-digital-dark text-gray-300"> <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+<body class="bg-digital-dark text-gray-300">
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
 
         <header class="text-center mb-8">
             <h1 class="text-4xl md:text-5xl font-bold text-digital-teal">SOUFIAN AIT BNFISSOU</h1>
@@ -81,6 +83,7 @@
 
         <main id="main-content">
 
+            <!-- Page: Accueil -->
             <div id="page-accueil" class="page-content active">
                 <section id="about" class="mb-10">
                     <h2 class="section-title text-digital-teal border-digital-teal">À Propos de Moi</h2>
@@ -92,6 +95,7 @@
                 </section>
             </div>
 
+            <!-- Page: Compétences & Projets -->
             <div id="page-competences" class="page-content">
                 <section id="competences-cles" class="mb-10">
                     <h2 class="section-title text-digital-cyan border-digital-cyan">Compétences Clés</h2>
@@ -105,6 +109,19 @@
                             <li>Communication efficace</li>
                             <li>E-Tourisme et Stratégies Digitales</li>
                             <li>Gestion de l'E-Réputation</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section: Compétences linguistiques (Moved and Renamed) -->
+                <section id="competences-linguistiques" class="mb-10">
+                    <h2 class="section-title text-digital-cyan border-digital-cyan">Compétences linguistiques</h2>
+                    <div class="card">
+                        <ul class="list-disc list-inside space-y-2 grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+                            <li>Arabe (Langue maternelle)</li>
+                            <li>Français (Courant - C1)</li>
+                            <li>Anglais (Bon niveau - B2)</li>
+                            <li>Espagnol (Notions - A2)</li>
                         </ul>
                     </div>
                 </section>
@@ -124,6 +141,7 @@
                 </section>
             </div>
 
+            <!-- Page: Parcours -->
             <div id="page-parcours" class="page-content">
                 <section id="experiences" class="mb-10">
                     <h2 class="section-title text-digital-cyan border-digital-cyan">Expériences et Stages</h2>
@@ -184,6 +202,7 @@
                 </section>
             </div>
 
+            <!-- Page: Contact & Plus -->
             <div id="page-contact-plus" class="page-content">
                 <section id="contact-info" class="mb-10">
                     <h2 class="section-title text-digital-orange border-digital-orange">Contactez-Moi</h2>
@@ -208,18 +227,7 @@
                         </ul>
                     </div>
                 </section>
-
-                <section id="langues" class="mb-10">
-                    <h2 class="section-title text-digital-teal border-digital-teal">Langues</h2>
-                    <div class="card">
-                        <ul class="list-disc list-inside space-y-2 grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
-                            <li>Arabe (Langue maternelle)</li>
-                            <li>Français (Courant - C1)</li>
-                            <li>Anglais (Bon niveau - B2)</li>
-                            <li>Espagnol (Notions - A2)</li>
-                        </ul>
-                    </div>
-                </section>
+                <!-- The "Langues" section was here and has been moved to "page-competences" -->
             </div>
         </main>
 
